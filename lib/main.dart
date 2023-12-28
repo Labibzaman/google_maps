@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-
 import 'HomeScreen.dart';
-import 'locationScreen.dart';
-import 'los.dart';
+
 
 void main(){
   runApp(const GoogleMap());
