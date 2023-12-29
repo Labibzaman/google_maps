@@ -62,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen> {
     if (myLocation != null && locationData != null) {
       polylines.add(
         Polyline(
-          polylineId: PolylineId('Route'),
+          polylineId: const PolylineId('My Location Route'),
           points: [
             LatLng(myLocation!.latitude!, myLocation!.longitude!),
             LatLng(locationData!.latitude!, locationData!.longitude!),
@@ -107,4 +107,3 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
-
