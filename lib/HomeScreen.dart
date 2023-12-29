@@ -54,7 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final String infoSnippet =
+    final String MyLocationWindow =
         '(${myLocation?.latitude ?? 0}, ${myLocation?.longitude ?? 0})';
 
     Set<Polyline> polylines = {};
@@ -68,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
             LatLng(locationData!.latitude!, locationData!.longitude!),
           ],
           color: Colors.blue,
-          width: 5,
+          width: 4,
         ),
       );
     }
@@ -94,7 +94,7 @@ class _HomeScreenState extends State<HomeScreen> {
             position: LatLng(myLocation?.latitude ?? 0, myLocation?.longitude ?? 0),
             infoWindow: InfoWindow(
               title: 'My Current Location',
-              snippet: infoSnippet,
+              snippet: MyLocationWindow,
             ),
             draggable: false,
             onTap: () {
